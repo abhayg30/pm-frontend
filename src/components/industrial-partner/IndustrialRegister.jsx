@@ -28,7 +28,7 @@ function IndustrialRegister() {
   const [errorText, setErrorText] = useState("");
   const [errorBool, setErrorBool] = useState(false);
   const user_type = 2;
-  const status = 0;
+  const status = 1;
   const working_rights = "FULL";
 
   const navigate = useNavigate();

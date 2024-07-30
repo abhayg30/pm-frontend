@@ -152,7 +152,7 @@ const Profile = () => {
     setProfile((data) => ({ ...data, [target.name]: target.value }));
   };
   const getUserProfile = async () => {
-    const response = await fetch(`http://localhost:8000/api/user/profile/`, {
+    const response = await fetch(`https://pm-backend-1-191103d1e4c3.herokuapp.com//api/user/profile/`, {
       method: "GET",
       headers: {
         "content-type": "application/json",
@@ -177,7 +177,7 @@ const Profile = () => {
     }
     console.log(JSON.stringify(profile));
     const response = await fetch(
-      `http://localhost:8000/api/user/update/profile/`,
+      `https://pm-backend-1-191103d1e4c3.herokuapp.com//api/user/update/profile/`,
       {
         method: "PUT",
         headers: {
@@ -214,7 +214,7 @@ const Profile = () => {
 
   const viewResume = async () => {
     if(userDetails.user_type === 1 || userDetails.user_type === 3){
-      const response = await fetch(`http://localhost:8000/stusup/view/resume/`, {
+      const response = await fetch(`https://pm-backend-1-191103d1e4c3.herokuapp.com//stusup/view/resume/`, {
         method: "GET",
         headers: {
           "content-type": "application/json",
@@ -245,7 +245,7 @@ const Profile = () => {
       }
       console.log(formData);
       const response = await axios.put(
-        "http://localhost:8000/stusup/resume/",
+        "https://pm-backend-1-191103d1e4c3.herokuapp.com//stusup/resume/",
         formData,
         {
           headers: {

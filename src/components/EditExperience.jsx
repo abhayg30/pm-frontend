@@ -81,7 +81,7 @@ function EditExperience() {
   const getExperience = async () => {
     const accessToken = localStorage.getItem("access_token");
     const response = await fetch(
-      "http://localhost:8000/stusup/view/experience/",
+      "https://pm-backend-1-191103d1e4c3.herokuapp.com//stusup/view/experience/",
       {
         method: "GET",
         headers: {
@@ -112,7 +112,7 @@ function EditExperience() {
   const handleEditExperience = async () => {
     const accessToken = localStorage.getItem("access_token");
     const response = await fetch(
-      `http://localhost:8000/stusup/update/experience/${id}`,
+      `https://pm-backend-1-191103d1e4c3.herokuapp.com//stusup/update/experience/${id}`,
       {
         method: "PUT",
         headers: {

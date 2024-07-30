@@ -80,7 +80,7 @@ function AddEducation() {
       setTo(null);
     }
     const response = await fetch(
-      "http://localhost:8000/stusup/create/education/",
+      "https://pm-backend-1-191103d1e4c3.herokuapp.com//stusup/create/education/",
       {
         method: "POST",
         headers: {

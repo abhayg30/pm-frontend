@@ -54,7 +54,7 @@ function ProgressLogs() {
 // fetch progress logs for project ID and set data 
   const getProgressLogs = async () => {
     const response = await fetch(
-      `http://localhost:8000/progressLogs/view/progresslogproject/${id}`,
+      `https://pm-backend-1-191103d1e4c3.herokuapp.com//progressLogs/view/progresslogproject/${id}`,
       {
         method: "GET",
         headers: {
@@ -70,7 +70,7 @@ function ProgressLogs() {
 //fetch comments on each progress log element and set data
   const getCommentsOnProgressLogs = async (progressionElement) => {
     const response = await fetch(
-      `http://localhost:8000/progressLogs/view/commentprogresslog/${progressionElement}`,
+      `https://pm-backend-1-191103d1e4c3.herokuapp.com//progressLogs/view/commentprogresslog/${progressionElement}`,
       {
         method: "GET",
         headers: {
@@ -101,7 +101,7 @@ function ProgressLogs() {
     const fetchRatedOnOptions = async () => {
       try {
         const response = await fetch(
-          `http://localhost:8000/application/view-approved-personnel/${id}/`,
+          `https://pm-backend-1-191103d1e4c3.herokuapp.com//application/view-approved-personnel/${id}/`,
           {
             method: "GET",
             headers: {
@@ -202,7 +202,7 @@ function ProgressLogs() {
     console.log(progLogId);
     const deleteProgLog = async (progLogId) => {
       const response = await fetch(
-        `http://localhost:8000/progressLogs/delete/progresslog/${progLogId}`,
+        `https://pm-backend-1-191103d1e4c3.herokuapp.com//progressLogs/delete/progresslog/${progLogId}`,
         {
           method: "DELETE",
           headers: {
@@ -220,7 +220,7 @@ function ProgressLogs() {
     event.stopPropagation();
     const deleteComment = async (comId) => {
       const response = await fetch(
-        `http://localhost:8000/progressLogs/delete/commentprogresslog/${comId}`,
+        `https://pm-backend-1-191103d1e4c3.herokuapp.com//progressLogs/delete/commentprogresslog/${comId}`,
         {
           method: "DELETE",
           headers: {
@@ -242,7 +242,7 @@ function ProgressLogs() {
     console.log(description);
     const updateLogBackend = async () => {
       const response = await fetch(
-        `http://localhost:8000/progressLogs/edit/progresslog/${editLogId}`,
+        `https://pm-backend-1-191103d1e4c3.herokuapp.com//progressLogs/edit/progresslog/${editLogId}`,
         {
           method: "PUT",
           headers: {
@@ -265,7 +265,7 @@ function ProgressLogs() {
     console.log(description);
     const updateLogBackend = async () => {
       const response = await fetch(
-        `http://localhost:8000/progressLogs/create/progresslog/`,
+        `https://pm-backend-1-191103d1e4c3.herokuapp.com//progressLogs/create/progresslog/`,
         {
           method: "POST",
           headers: {
@@ -288,7 +288,7 @@ function ProgressLogs() {
     console.log(commentDescription);
     const updateCommentBackend = async () => {
       const response = await fetch(
-        `http://localhost:8000/progressLogs/create/comment/`,
+        `https://pm-backend-1-191103d1e4c3.herokuapp.com//progressLogs/create/comment/`,
         {
           method: "POST",
           headers: {
@@ -316,7 +316,7 @@ function ProgressLogs() {
 
     const updateCommentBackend = async () => {
       const response = await fetch(
-        `http://localhost:8000/progressLogs/edit/commentprogresslog/${editCommentId}`,
+        `https://pm-backend-1-191103d1e4c3.herokuapp.com//progressLogs/edit/commentprogresslog/${editCommentId}`,
         {
           method: "PUT",
           headers: {

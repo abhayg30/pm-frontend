@@ -32,7 +32,7 @@ const ProjectsApplied = () => {
   const getAllJobs = async () => {
     const accessToken = localStorage.getItem("access_token");
     const response = await fetch(
-      "http://localhost:8000/application/view/projects/",
+      "https://pm-backend-1-191103d1e4c3.herokuapp.com//application/view/projects/",
       {
         method: "GET",
         headers: {

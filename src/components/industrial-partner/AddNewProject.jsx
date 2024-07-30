@@ -99,7 +99,7 @@ function AddNewProject() {
         job_status,
       })
     );
-    const response = await fetch("http://localhost:8000/partner/job/create/", {
+    const response = await fetch("https://pm-backend-1-191103d1e4c3.herokuapp.com//partner/job/create/", {
       method: "POST",
       headers: {
         "Content-type": "application/json",

@@ -42,7 +42,7 @@ const ReviewInformation = (access_token) => {
   // console.log("abcd");
   const getAllJobs = async () => {
     const response = await fetch(
-      `http://localhost:8000/partner/job/display/${id}`,
+      `https://pm-backend-1-191103d1e4c3.herokuapp.com//partner/job/display/${id}`,
       {
         method: "GET",
         headers: {
@@ -59,7 +59,7 @@ const ReviewInformation = (access_token) => {
 
   const applicationStatus = async () => {
     const response = await fetch(
-      `http://localhost:8000/application/status/${id}/`,
+      `https://pm-backend-1-191103d1e4c3.herokuapp.com//application/status/${id}/`,
       {
         method: "GET",
         headers: {
@@ -75,7 +75,7 @@ const ReviewInformation = (access_token) => {
 
   const withdrawApplication = async () => {
     const response = await fetch(
-      `http://localhost:8000/application/withdraw/${id}/${userDetails.user_id}/`,
+      `https://pm-backend-1-191103d1e4c3.herokuapp.com//application/withdraw/${id}/${userDetails.user_id}/`,
       {
         method: "DELETE",
         headers: {
@@ -94,7 +94,7 @@ const ReviewInformation = (access_token) => {
   const getUserInformation = async () => {
     console.log(accessToken)
     const response = await fetch(
-      `http://localhost:8000/application/review/`,
+      `https://pm-backend-1-191103d1e4c3.herokuapp.com//application/review/`,
       {
         method: "GET",
         headers: {
@@ -116,7 +116,7 @@ const ReviewInformation = (access_token) => {
 
   const applyToJob = async () => {
     const response = await fetch(
-      `http://localhost:8000/application/apply/${id}/${userDetails.user_id}/`,
+      `https://pm-backend-1-191103d1e4c3.herokuapp.com//application/apply/${id}/${userDetails.user_id}/`,
       {
         method: "PUT",
         body: JSON.stringify({

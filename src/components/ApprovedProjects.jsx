@@ -53,7 +53,7 @@ const ApprovedProjects = () => {
   // const position = allJobs.position;
   const getAllJobs = async () => {
 
-    const response = await fetch("http://localhost:8000/application/approved-jobs/", {
+    const response = await fetch("https://pm-backend-1-191103d1e4c3.herokuapp.com//application/approved-jobs/", {
       method: "GET",
       headers: {
         "content-type": "application/json",
@@ -74,7 +74,7 @@ const ApprovedProjects = () => {
   };
   const hasAccepted = async () => {
 
-    const response = await fetch(`http://localhost:8000/application/has-accepted/`, {
+    const response = await fetch(`https://pm-backend-1-191103d1e4c3.herokuapp.com//application/has-accepted/`, {
       method: "GET",
       headers: {
         Authorization: `Bearer ${accessToken}`,
@@ -89,7 +89,7 @@ const ApprovedProjects = () => {
     setOpen(false);
   };
   const acceptOffer = async (id) => {
-    const response = await fetch(`http://localhost:8000/application/accept-offer/${id}/`, {
+    const response = await fetch(`https://pm-backend-1-191103d1e4c3.herokuapp.com//application/accept-offer/${id}/`, {
       method: "PUT",
       headers: {
         Authorization: `Bearer ${accessToken}`,

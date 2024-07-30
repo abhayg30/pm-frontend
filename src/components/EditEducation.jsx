@@ -93,7 +93,7 @@ function EditEducation() {
   const getEducation = async () => {
     const accessToken = localStorage.getItem("access_token");
     const response = await fetch(
-      "http://localhost:8000/stusup/view/education/",
+      "https://pm-backend-1-191103d1e4c3.herokuapp.com//stusup/view/education/",
       {
         method: "GET",
         headers: {
@@ -139,7 +139,7 @@ function EditEducation() {
     //     console.log(educationDetails)
     // >>>>>>> student-supervisor-backend
     const response = await fetch(
-      `http://localhost:8000/stusup/update/education/${id}`,
+      `https://pm-backend-1-191103d1e4c3.herokuapp.com//stusup/update/education/${id}`,
       {
         method: "PUT",
         headers: {

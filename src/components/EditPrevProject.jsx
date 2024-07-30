@@ -31,7 +31,7 @@ function EditPrevProject(){
 // API to get all previous projects. 
 
   const getProject = async () => {
-    const response = await fetch(`http://localhost:8000/stusup/view/project/`, {
+    const response = await fetch(`https://pm-backend-1-191103d1e4c3.herokuapp.com//stusup/view/project/`, {
       method: "GET",
       headers: {
         "content-type": "application/json",
@@ -64,7 +64,7 @@ function EditPrevProject(){
   const handleEditPrevProject = async () => {
     const accessToken = localStorage.getItem("access_token");
     const response = await fetch(
-      `http://localhost:8000/stusup/update/project/${id}`,
+      `https://pm-backend-1-191103d1e4c3.herokuapp.com//stusup/update/project/${id}`,
       {
         method: "PUT",
         headers: {

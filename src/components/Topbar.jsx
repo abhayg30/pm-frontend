@@ -41,8 +41,8 @@ const Topbar = () => {
 // get all jobs for implementation of search
   const getAllJobs = async () => {
     const response = await fetch(
-      "http://localhost:8000/partner/job/display/",
-      // `http://localhost:8000/partner/job/display/${id}`,
+      "https://pm-backend-1-191103d1e4c3.herokuapp.com//partner/job/display/",
+      // `https://pm-backend-1-191103d1e4c3.herokuapp.com//partner/job/display/${id}`,
       {
         method: "GET",
         headers: {

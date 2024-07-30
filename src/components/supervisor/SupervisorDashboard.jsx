@@ -39,7 +39,7 @@ function SupervisorDashboard(accessToken) {
     console.log(searchQuery);
     const accessToken = localStorage.getItem("access_token");
     const response = await fetch(
-      `http://localhost:8000/partner/search/${searchQuery}/`,
+      `https://pm-backend-1-191103d1e4c3.herokuapp.com//partner/search/${searchQuery}/`,
       {
         method: "GET",
         headers: {
@@ -55,7 +55,7 @@ function SupervisorDashboard(accessToken) {
   };
   const getAllJobs = async () => {
     const accessToken = localStorage.getItem("access_token");
-    const response = await fetch("http://localhost:8000/partner/job/display/", {
+    const response = await fetch("https://pm-backend-1-191103d1e4c3.herokuapp.com//partner/job/display/", {
       method: "GET",
       headers: {
         "content-type": "application/json",

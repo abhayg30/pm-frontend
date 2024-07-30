@@ -91,7 +91,7 @@ const ExperienceDetails = () => {
 
   const getExperience = async () => {
     const response = await fetch(
-      `http://localhost:8000/stusup/view/experience/`,
+      `https://pm-backend-1-191103d1e4c3.herokuapp.com//stusup/view/experience/`,
       {
         method: "GET",
         headers: {
@@ -138,7 +138,7 @@ const ExperienceDetails = () => {
   const deleteExperience = async (id) => {
     const accessToken = localStorage.getItem("access_token");
     const response = await fetch(
-      `http://localhost:8000/stusup/delete/experience/${id}`,
+      `https://pm-backend-1-191103d1e4c3.herokuapp.com//stusup/delete/experience/${id}`,
       {
         method: "DELETE",
         headers: {

@@ -81,7 +81,7 @@ function BrowsePartners() {
 
   const getUserProfile = async () => {
     const response = await fetch(
-      `http://localhost:8000/stusup/partner-detail/`,
+      `https://pm-backend-1-191103d1e4c3.herokuapp.com//stusup/partner-detail/`,
       {
         method: "GET",
         headers: {
@@ -95,7 +95,7 @@ function BrowsePartners() {
     setTempData(data);
   };
   const handleInvite = async (email) => {
-    const response = await fetch(`http://localhost:8000/stusup/send-email/`, {
+    const response = await fetch(`https://pm-backend-1-191103d1e4c3.herokuapp.com//stusup/send-email/`, {
       method: "POST",
       headers: {
         "content-type": "application/json",

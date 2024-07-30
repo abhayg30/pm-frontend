@@ -75,7 +75,7 @@ function ApplicantsInfo() {
   // Fetching the applicant users' info
   const getUserProfile = async () => {
     const response = await fetch(
-      `http://localhost:8000/application/view-applicants/${id}/`,
+      `https://pm-backend-1-191103d1e4c3.herokuapp.com//application/view-applicants/${id}/`,
       {
         method: "GET",
         headers: {

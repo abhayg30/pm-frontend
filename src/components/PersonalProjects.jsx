@@ -90,7 +90,7 @@ const PersonalProjects = () => {
 // API for getting project details
 
   const getProject = async () => {
-    const response = await fetch(`http://localhost:8000/stusup/view/project/`, {
+    const response = await fetch(`https://pm-backend-1-191103d1e4c3.herokuapp.com//stusup/view/project/`, {
       method: "GET",
       headers: {
         "content-type": "application/json",
@@ -134,7 +134,7 @@ const PersonalProjects = () => {
   const deleteProject = async (projectid) => {
     const accessToken = localStorage.getItem("access_token");
     const response = await fetch(
-      `http://localhost:8000/stusup/delete/project/${projectid}`,
+      `https://pm-backend-1-191103d1e4c3.herokuapp.com//stusup/delete/project/${projectid}`,
       {
         method: "DELETE",
         headers: {

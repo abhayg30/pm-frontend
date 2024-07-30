@@ -51,7 +51,7 @@ function ApplicantDetail() {
       body = `Congratulations, your application has been successful for project: http://localhost:3000/Job/${jobId}`;
     }
     const response = await fetch(
-      `http://localhost:8000/application/send-email/`,
+      `https://pm-backend-1-191103d1e4c3.herokuapp.com//application/send-email/`,
       {
         method: "POST",
         headers: {
@@ -75,7 +75,7 @@ function ApplicantDetail() {
   // Updating the applicant's application's status to rejected
   const rejectApplicant = async () => {
     const response = await fetch(
-      `http://localhost:8000/application/update/${jobId}/`,
+      `https://pm-backend-1-191103d1e4c3.herokuapp.com//application/update/${jobId}/`,
       {
         method: "PUT",
         headers: {
@@ -109,7 +109,7 @@ function ApplicantDetail() {
   const approveAplicant = async () => {
     console.log(user);
     const response = await fetch(
-      `http://localhost:8000/application/update/${jobId}/`,
+      `https://pm-backend-1-191103d1e4c3.herokuapp.com//application/update/${jobId}/`,
       {
         method: "PUT",
         headers: {

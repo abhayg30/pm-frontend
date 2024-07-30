@@ -35,7 +35,7 @@ function FeedbackForm() {
       try {
         const token = localStorage.getItem("access_token");
         const response = await fetch(
-          `http://localhost:8000/application/view-approved-personnel/${id}/`,
+          `https://pm-backend-1-191103d1e4c3.herokuapp.com//application/view-approved-personnel/${id}/`,
           {
             method: "GET",
             headers: {
@@ -61,7 +61,7 @@ function FeedbackForm() {
     const userDetails = decodeToken(token);
     const user = userDetails.user_id;
     const response = await fetch(
-      "http://localhost:8000/ratings/create/rating/",
+      "https://pm-backend-1-191103d1e4c3.herokuapp.com//ratings/create/rating/",
       {
         method: "PUT",
         headers: {

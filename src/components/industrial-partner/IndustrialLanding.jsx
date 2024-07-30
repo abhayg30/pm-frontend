@@ -35,7 +35,7 @@ function IndustrialLanding() {
   // letting user know that they will be approved as supervisor by admin and will be notified by email.
   const makePartner = async () => {
     const token = localStorage.getItem("access_token");
-    const response = await fetch("http://localhost:8000/partner/create/", {
+    const response = await fetch("https://pm-backend-1-191103d1e4c3.herokuapp.com//partner/create/", {
       method: "POST",
       headers: {
         "Content-type": "application/json",

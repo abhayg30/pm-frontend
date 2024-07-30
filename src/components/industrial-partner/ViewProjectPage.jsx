@@ -37,7 +37,7 @@ function ViewProjectPage() {
   const getAllJobs = async () => {
     const accessToken = localStorage.getItem("access_token");
     const response = await fetch(
-      "http://localhost:8000/partner/job/view/all/",
+      "https://pm-backend-1-191103d1e4c3.herokuapp.com//partner/job/view/all/",
       {
         method: "GET",
         headers: {
@@ -71,7 +71,7 @@ function ViewProjectPage() {
   const deleteProject = async () => {
     const accessToken = localStorage.getItem("access_token");
     const response = await fetch(
-      `http://localhost:8000/partner/job/delete/${id}`,
+      `https://pm-backend-1-191103d1e4c3.herokuapp.com//partner/job/delete/${id}`,
       {
         method: "DELETE",
         headers: {
@@ -99,7 +99,7 @@ function ViewProjectPage() {
       const accessToken = localStorage.getItem("access_token");
       console.log(status);
       const response = await fetch(
-        `http://localhost:8000/partner/change/status/${id}/`,
+        `https://pm-backend-1-191103d1e4c3.herokuapp.com//partner/change/status/${id}/`,
         {
           method: "PUT",
           headers: {

@@ -99,7 +99,7 @@ const EducationDetails = () => {
 
   const getEducation = async () => {
     const response = await fetch(
-      `http://localhost:8000/stusup/view/education/`,
+      `https://pm-backend-1-191103d1e4c3.herokuapp.com//stusup/view/education/`,
       {
         method: "GET",
         headers: {
@@ -147,7 +147,7 @@ const EducationDetails = () => {
   const deleteEducation = async (id) => {
     const accessToken = localStorage.getItem("access_token");
     const response = await fetch(
-      `http://localhost:8000/stusup/delete/education/${id}`,
+      `https://pm-backend-1-191103d1e4c3.herokuapp.com//stusup/delete/education/${id}`,
       {
         method: "DELETE",
         headers: {

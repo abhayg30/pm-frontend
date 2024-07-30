@@ -17,4 +17,5 @@ psd
 thumb
 sketch
 
-# End of https://www.toptal.com/developers/gitignore/api/react
+# End of https://www.toptal.com/developers/gitignore/api/reactnode_modules
+npm-debug.log

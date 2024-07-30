@@ -92,7 +92,7 @@ function IndustrialRegister() {
   const signup = async (e) => {
     e.preventDefault();
 
-    const response = await fetch("http://127.0.0.1:8000/api/user/register/", {
+    const response = await fetch("https://pm-backend-1-191103d1e4c3.herokuapp.com/api/user/register/", {
       method: "POST",
       headers: {
         "Content-type": "application/json",

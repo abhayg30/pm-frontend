@@ -57,7 +57,7 @@ function Wrapper() {
   
   const getAccessToken = async () => {
     refresh = true;
-    const response = await fetch("http://127.0.0.1:8000/api/token/refresh/", {
+    const response = await fetch("https://pm-backend-1-191103d1e4c3.herokuapp.com/api/token/refresh/", {
       method: "POST",
       headers: {
         "Content-type": "application/json",

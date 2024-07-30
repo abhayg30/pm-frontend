@@ -23,7 +23,7 @@ function LandingPage() {
     e.preventDefault()
     if (email !== '' || password !== '') {
       setSubmitError('');
-      const response = await fetch('http://127.0.0.1:8000/api/user/login/', {
+      const response = await fetch('https://pm-backend-1-191103d1e4c3.herokuapp.com/api/user/login/', {
         method: 'POST',
         headers: {
           'Content-type': 'application/json'
